@@ -15,8 +15,8 @@
       </button>
     </div>
 
-    <p *if="mensajeAuth" [style.color]="tokenJwt ? 'green' : 'red'"><strong>{{ mensajeAuth }}</strong></p>
-    <div *if="tokenJwt" style="word-break: break-all; background: #e2e2e2; padding: 10px; border-radius: 4px;">
+    <p *ngIf="mensajeAuth" [style.color]="tokenJwt ? 'green' : 'red'"><strong>{{ mensajeAuth }}</strong></p>
+    <div *ngIf="tokenJwt" style="word-break: break-all; background: #e2e2e2; padding: 10px; border-radius: 4px;">
       <small><strong>Token JWT Generado:</strong> {{ tokenJwt }}</small>
     </div>
   </section>
